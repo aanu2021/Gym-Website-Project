@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEBSITE PROJECT</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS reset */
+
+        body {
+
+            color: white;
+            margin: 0px;
+            padding: 0px;
+
+            background-image: url('img/man-gd7d320b72_1920.jpg');
+            background-repeat: no-repeat;
+
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .left {
+
+            display: inline-block;
+
+            /* border:3px solid red; */
+
+            position: absolute;
+
+            top: 5px;
+            left: 5px;
+
+
+
+        }
+
+        .left img {
+
+            width: 300px;
+            height: 200px;
+
+            filter: invert(60%);
+
+        }
+
+        .left div {
+            text-align: center;
+            color: rgb(226, 222, 19);
+            font-size: 25px;
+        }
+
+        .mid {
+
+            display: block;
+            width: 50%;
+
+            margin: 20px auto;
+            /* border:3px solid green; */
+
+        }
+
+        .right {
+
+            color: black;
+
+            display: inline-block;
+
+            position: absolute;
+
+            top: 100px;
+            right: 50px;
+
+            /* border:3px solid darkblue; */
+
+        }
+
+        .btn {
+
+            border: 3px solid black;
+
+            font-size: 20px;
+
+            background-color: lawngreen;
+
+            color: mediumblue;
+
+            margin: 10px 4px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        .right div button:hover {
+
+            background-color: grey;
+
+        }
+
+        .navbar li {
+
+            display: inline-block;
+
+
+        }
+
+        .navbar li a {
+
+            font-size: 20px;
+            color: rgb(173, 243, 9);
+            text-decoration: none;
+            padding: 40px 50px;
+
+        }
+
+        .navbar li a:hover {
+
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .container {
+
+            color:greenyellow;
+             width:100%;   
+            /* border: 2px solid red; */
+            /* background-color: orchid; */
+            /* border-radius: 20px; */
+            margin: 20px 30px;
+            padding: 20px 20px;
+            width: 500px;
+            position: absolute;
+            text-align: center;
+            top: 350px;
+            left: 5px;
+
+        }
+
+        .form-group{
+            margin:2px 120px;
+        }
+
+        .form-group input{
+
+            cursor:pointer;
+            font-size:20px;
+            width:250px;
+            display:block;
+            text-align:center;
+            font-family: 'Baloo Bhai 2', cursive;
+          
+           
+            border:4px solid blue;
+            border-top-left-radius:10px;
+            border-bottom-right-radius:10px;
+
+        }
+
+        .container h1{
+            margin:auto;
+            font-size:30px;
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- Left Div for logo -->
+
+        <div class="left">
+
+            <img src="img/silhouette-g47769dd3c_640.png" alt="Loading Image">
+
+            <div>Fitness FREAKkkkkk</div>
+
+        </div>
+
+        <!-- Mid Div for navbars -->
+
+        <div class="mid">
+
+            <ul class="navbar">
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Right Div for buttons -->
+
+        <div class="right">
+
+            <div class="temp">
+
+                <button class="btn">CALL US</button>
+                <button class="btn">EMAIL US</button>
+
+            </div>
+
+            <!-- <button class="btn">CALL US</button>
+      <button class="btn">EMAIL US</button> -->
+
+        </div>
+
+
+    </header>
+
+    <div class="container">
+
+        <h1>Join the best Gym of West Bengal Now...</h1>
+
+        <form action="noaction.php">
+
+            <div class="form-group">
+
+                <input type="text" placeholder="Enter Your Name : ">
+
+            </div>
+
+            <div class="form-group">
+
+                <input type="number" placeholder="Enter Your Age : ">
+
+            </div>
+
+            <div class="form-group">
+
+                <input type="email" placeholder="Enter your Email : ">
+
+            </div>
+
+           
+
+            <div class="form-group">
+
+                <input class="anu" type="date" placeholder="Enter Current Date : ">
+
+            </div>
+
+            <div class="form-group">
+
+                <input class="submit" type="submit" value="Submit Now : ">
+                <input class="reset" type="reset" value="Reset All : ">
+
+ 
+            </div>
+
+        
+        </form>
+
+    </div>
+
+</body>
+
+</html>
